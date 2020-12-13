@@ -17,10 +17,10 @@
         var el = tech.el();
         var duration = null;
 
-        var mediaDataSource = {
-        	type: 'flv', 
-        	url: source.src
-        };
+        const mediaDataSource = options.mediaDataSource;
+    
+        mediaDataSource.type = mediaDataSource.type === undefined ? 'flv' : mediaDataSource.type;
+        mediaDataSource.url = source.src;
 
         var flv = flvjs.createPlayer(mediaDataSource, options.flvjsConfig);
 

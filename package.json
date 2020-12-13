@@ -7,13 +7,15 @@
     "example": "examples"
   },
   "dependencies": {
-    "flv.js": "^1.1.0",
-    "video.js": "^5.11.9",
-    "videojs-contrib-media-sources": "^4.0.4"
+    "flv.js": "https://github.com/GuacLive/flv.js.git",
+    "video.js": "^7.11.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
